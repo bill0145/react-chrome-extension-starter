@@ -6,12 +6,16 @@ module.exports = {
       popup: "./src/popup.jsx"
     },
     resolve: {
-      extensions: [".jsx", ".js"]
+      extensions: [".tsx", ".ts", ".jsx", ".js"]
     },
     module: {
       rules: [
         {
           test: /\.jsx$/, use:"babel-loader"    
+          
+        },
+        {
+          test: /\.tsx$/, use:"ts-loader"
         }
       ]
     },
