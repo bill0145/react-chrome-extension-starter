@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 const App = () => {
-    
     const [state, setState] = useState({ url: "url"});
     useEffect(() => {
         const tabUrl = url => setState(url);
@@ -11,7 +10,6 @@ const App = () => {
             })
         })
     }, []);
-return <h1>"{state.url}"</h1>
+return <h1>{state.url}</h1>
 };
-
 export default App;
